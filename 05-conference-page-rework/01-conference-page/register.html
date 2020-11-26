@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles Conference</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #293F51;">
+        <div class="container p-3">
+            <div class="row">
+                <div class= "col-md-4 display-4" style="color: white;">STYLES CONFERENCE</div>
+                <div class="col-lg-8 col-md-12 d-flex flex-column justify-content-end align-items-end">
+                    <div class="h4 p-1 d-none d-sm-block" style="color: #648880;">August 24-26th - Chicago, IL</div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid sticky-top" style="background-color: #293F51;">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <h4 class="d-sm-none d-block" style="color: #648880;">August 24-26th - Chicago, IL</h4>
+                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav">
+                         <li class="nav-item ">
+                             <a href="index.html" class="nav-link">HOME</a>
+                         </li>
+                         <li class="navbar-nav">
+                             <a href="speakers.html" class="nav-link">SPEAKERS</a>
+                         </li>
+                         <li class="navbar-nav">
+                             <a href="schedule.html" class="nav-link">SCHEDULE</a>
+                        </li>
+                        <li class="navbar-nav">
+                             <a href="venue.html" class="nav-link">VENUE</a>
+                        </li>
+                        <li class="navbar-nav active">
+                             <a href="register.html" class="nav-link">REGISTER</a>
+                        </li>
+                     </ul>
+                 </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-image: linear-gradient(to right, #A1D3B0, #F5F0D3); min-height: 200px;">
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+            <p style="color: #648880; font-size: 45px">Register</p>
+            <p style="color: grey; font-size: 25px;">Every year we aim to have an unbelievable time, and this year we'd love it for you to join us.
+                Conference passes only cost $99, one of the best values you'll find.</p>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-sm-7">
+                <h4>Purchase a Conference Pass</h4>
+                <h6>$99 PER PASS</h6>
+                <div>Purchase your Styles Conference pass using the form to the right. Multiple passes may be purchased within the same order, so feel free to bring a friend or two along. Once your order is finished we’ll follow up and provide a receipt for your purchase. See you soon!</div>
+                <h4>Why Attend?</h4>
+                <ul>
+                    <li>Over twenty world-class speakers</li>
+                    <li>One full day of workshops and two full days of presentations</li>
+                    <li>Hosted at The Chicago Theatre, a historical landmark</li>
+                    <li>August in Chicago is simply amazing</li>
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-sm-5">
+                <form action="/action_page.php">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" placeholder="Full Name" id="Name" required>
+                    <br>
+                    <label for="Email">Email</label>
+                    <input type="email" class="form-control" placeholder="Email address" id="Email" required>
+                    <br>
+                    <label for="Number">Number of Passes</label>
+                    <select class="form-control" id="Number" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <label for="Comments">Comments</label>
+                    <textarea  class= "form-control" name="" id="Comments" cols="30" rows="5"></textarea>
+                    <br>
+                    <button class="btn btn-lg btn-primary" type="submit">Purchase</button>
+                    
+
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="container-fluid  d-flex align-items-center" style="background-color: #293F51; height: 100px;">
+        <div class="container d-flex justify-content-between pt-3">
+            <p style="color: #648880;">&#169 Style Conference</p>
+            <ul class="list-inline d-none d-sm-block">
+                <a class="list-inline-item"  style="color: white;" href="index.html">Home</a>
+                <a class="list-inline-item"  style="color: white;" href="speakers.html">Speakers</a>
+                <a class="list-inline-item"  style="color: white;" href="schedule.html">Schedule</a>
+                <a class="list-inline-item"  style="color: white;" href="venue.html">Venue</a>
+                <a class="list-inline-item"  style="color: white;" href="register.html">Register</a>
+                
+            </ul>
+        </div>
+        
+    </footer>
+    
+    
+</body>
+</html>

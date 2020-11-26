@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+/*header-bar and nav-bar styles*/
+#header-bar {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	background-color: #ff9f00;
+	justify-content: flex-end;
+	background-image: url("../images/ThinkTank.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-bottom: 1px solid #cccccc;
+	position: relative;
+}
+
+#notification, #profile {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#nav-bar {
+	color: orange;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid #cccccc;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	position: sticky;
+	top: 0;
+}
+
+
+#search-label ,#search-cancel-label{
+	float:left;
+	width: 5%;
+	text-align: right;
+}
+
+
+#search-cancel-label, #search-bar  {
+	display: none;
+}
+
+#search-input:checked~ #search-label {
+	display: none;
+}
+
+#search-input:checked~ #search-cancel-label {
+	display: block;
+}
+
+#search-input:checked~ #page-names{
+	display: none;
+}
+
+#search-input:checked~ #search-bar {
+	display: block;
+}
+
+#menu-label {
+	visibility: hidden;
+	width: 5%;
+	float: right;
+	text-align: left;
+}
+
+#page-names, #search-bar{
+	float: left;
+	width: 90%;
+}
+
+#search-bar {
+	width: 80%;
+	padding: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 5%;
+	margin-right: auto;
+	border: none;
+	outline-width: 0;
+	border-bottom: 1px solid orange;
+	font-size: 17px;
+}
+label, a:hover {
+	cursor: pointer;
+}
+#page-names > a {
+	display: inline-block;
+	height: 43px;
+	line-height: 43px;
+	padding: 0 20px;
+}
+
+#page-names >a:hover {
+	border-bottom: 2px solid orange;
+}
+
+@media screen and (max-width: 720px) {
+	#menu-label {
+		visibility: visible;
+	}
+	#page-names {
+		width: 50%;
+		margin-left: 50%;
+		position: absolute;
+		top: 45px;
+		display: none;
+	}
+	#page-names > a {
+		width: 100%;
+		display: block;
+		font-weight: bold;
+		height: 50px;
+		line-height: 50px;
+		background-color: rgba(124, 122, 122, 0.7);
+		border-bottom: 2px  solid orange;
+	}
+
+	#page-names >a:hover {
+		background-color: rgba(225,225,225,0.9);
+	}
+
+	#menu-input:checked~ #page-names {
+		display: block;
+	}
+}
+
+/*header-bar and nav-bar styles ends*/
+
+/* main content  */
+#flex-container {
+	margin: 30px auto;
+	width: 95%;
+
+}
+
+footer {
+	width: 100%;
+	float: left;
+}
+
+footer > #color-block {
+	width: 100%;
+	height: 200px;
+	background-color: #ff9f00;
+
+}
+
+footer > #fixed-banner {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	line-height: 45px;
+	background-color: #fff;
+	border-top: 1px solid #cccccc;
+	text-align: center;
+	display: block;
+}
+
+#fixed-banner > a {
+	margin: 1%;
+	text-decoration: none;
+}
+
+#footer-link > a{
+	text-align: center;
+	line-height: 150px;
+	height: 150px;
+	font-size: 200%;
+	float: right;
+	margin-right: 10%;
+	text-decoration: none;
+}
+
+.flex-block {
+	height: 600px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.user-name, .user-image, .user-title, .user-comment {
+	border: 1px solid black;
+}
+
+.user-name, .user-comment {
+	height: 10%;
+}
+
+.user-image {
+	height: 50%;
+}
+
+.user-title {
+	height: 30%;
+}
+@media screen and (max-width: 550px) {
+	#fixed-banner > a {
+		font-size: 70%;
+	}
+}
+@media screen and (min-width: 551px) and (max-width: 1000px){
+	#flex-container {
+		width: 96%;
+	}
+	.flex-block {
+		width: 46%;
+		float: left;
+		margin: 20px 2%;
+	}
+
+	.user-name, .user-comment {
+		height: 10%;
+	}
+	
+	.user-image, .user-title{
+		height: 40%;
+	}
+}
+
+@media screen and (min-width: 1001px) {
+	#flex-container {
+		width: 1000px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#flex-container > .sizeL {
+		width: 1000px;
+		text-align: center;
+	}
+
+	#flex-container > .sizeM {
+		width: 480px;
+		text-align: center;
+	}
+
+	#flex-container > .sizeS {
+		width: 310px;
+		text-align: center;
+	}
+
+	.sizeL > .user-image {
+		height: 50%;
+	}
+	.sizeL > .user-name, .user-comment {
+		height: 10%;
+	}
+	.sizeL > .user-title {
+		height: 30%;
+	}
+
+	.sizeM > .user-image, .user-title {
+		height: 40%;
+	}
+	.sizeM > .user-name, .user-comment {
+		height: 10%;
+	}
+
+	.sizeS> .user-image, .user-title {
+		height: 40%;
+	}
+	.sizeS > .user-name, .user-comment {
+		height: 10%;
+	}
+
+	.sizeL > .user-name {
+		width: 50%;
+		float: right;
+	}
+	.sizeL > .user-image {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	.sizeL > .user-title {
+		width: 50%;
+		float: right;
+		height: 80%;
+	}
+
+	.sizeL > .user-comment {
+		width: 50%;
+		float: right;
+	}
+	
+
+}

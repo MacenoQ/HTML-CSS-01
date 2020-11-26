@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header-bar {
+    background-color: #F6B31A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#header-details {
+    list-style-type: none;
+}
+
+#header-details > li {
+    float:left;
+}
+
+#header-details > li  i {
+    font-size: 36px;
+}
+
+#header-details > li > a {
+    color: #61132F;
+    text-decoration: none;
+}
+
+#name-certify-sm {
+    float: left;
+    width: 30%;
+}
+
+#icon-group {
+    float: left;
+    width: 70%;
+}

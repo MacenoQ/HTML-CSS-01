@@ -1,0 +1,114 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#top-image {
+	background-attachment: fixed;
+}
+
+#top-image, #bot-image {
+	background-image: url("../images/canada_national_flag-2560x1600.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center, center;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+#sub-image1 {
+	background-image: url("../images/city_toronto_canada_4k_hd-3840x2160.jpg");
+}
+
+#sub-image2 {
+	background-image: url("../images/moraine_lake_canada_4k-3840x2160.jpg");
+}
+
+#sub-image3 {
+	background-image: url("../images/vancouver_sunset_canada.jpg");
+}
+
+#sub-image4 {
+	background-image: url("../images/banff_national_park_in_canada_4k-3840x2160.jpg");
+}
+
+#sub-image1, #sub-image2, #sub-image3, #sub-image4 {
+	position: relative;
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 0.75;
+	height: 400px;
+	width: 100%;
+} 
+
+#top-box, #bot-box{
+	width: 100%;
+	height: 100px;
+	background-color: grey;
+	position: relative;
+	text-align: center;
+	top: 45%;
+	background-color: transparent;
+}
+#top-text, #bot-text {
+	width: 360px;
+	margin: 0 auto;
+	background-color: grey;
+	color: white;
+	font-size: 80px;
+}
+
+#sub-text1, #sub-text2, #sub-text3, #sub-text4 {
+	position:absolute;
+	top:45%;
+	width:100%;
+	text-align:center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#top-desc, #sub-desc1, #sub-desc2, #sub-desc3, #sub-desc4 {
+	min-height:200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 3% 10%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+#top-desc {
+	background-color: #e6e6e6;
+}
+
+#sub-desc1, #sub-desc2, #sub-desc3, #sub-desc4 {
+	background-color: #404040;
+	color: white;
+}
+
+@media screen and (max-width: 361px) {
+	#top-text, #bot-text {
+		font-size: 30px;
+		width: 50%;
+	}
+	#sub-text1, #sub-text2, #sub-text3, #sub-text4 {
+		font-size: 30px;
+	}
+	#top-image, #sub-image1, #sub-image2, #sub-image3, #sub-image4 {
+		background-attachment: scroll;
+	} 
+	#top-image, #bot-image {
+		height: 200px;
+		background-position: center;
+
+	}
+}
